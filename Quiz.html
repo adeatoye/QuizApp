@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <section class="container1">
+        <div>
+            <h1>WELCOME TO KLOUD'S QUIZ</h1>
+            <span>Press <button onclick="open()" id="button1">Okay</button> to continue.</span>
+        </div>
+        
+    </section> -->
+    
+    <section class="container2">
+        <h2>TEST YOUR KNOWLEDGE</h2>        
+        <div id="container2">           
+                
+                
+                <h3>Enter Details To Proceed To Exam</h3>
+                <div id="detailsLogin">
+                    <input type="text" id="firstName" class="fullname" placeholder= "Enter your Firstname"><br>
+                    <input type="text" id="lastName" class="fullname" placeholder= "Enter your Lastname"><br>
+                    <button id="startQuiz-btn">Start Quiz</button>
+                </div>
+            
+        </div>
+        
+    </section>
+    
+    <section class="admin-container" style="display: none">
+        <fieldset id="qEdit">
+            <span>Add Questions<a href=""><button id="adminLogout-btn">Logout</button></a></span>
+            <div id="crud">
+                <button id="update-btn">Update</button>
+                <button id="delete-btn">Delete</button>
+            </div>
+            <div id="qEdit-control">                
+                <textarea style="resize: none;" name="addQuestion" id="newQuestion" cols="30" rows="8" placeholder="New Question."></textarea><br>
+                <div class="option-container">
+                    <div class="option-wrapper">
+                        <input type="radio" name="addAnswer" class="opt0" value="0">
+                        <input type="text" placeholder="Add Answer." class="opt opt0" value="">
+                    </div>
+                    <div class="option-wrapper">
+                        <input type="radio" name="addAnswer" class="opt1" value="1">
+                        <input type="text" placeholder="Add Answer." class="opt opt1" value="">                        
+                    </div>
+                </div>
+                                
+                <button id="insert-btn">Insert</button>
+                <button id="clrList-btn">Clear List</button>
+            </div>
+            
+            
+        </fieldset>
+        
+        <fieldset class="qDisplay" >
+            <!-- <div id="edit-div"><p id="edit-question">1. Question Text </p><button class="edit-btn edit-btn" id="edit-question-btn-">Edit</button></div><br><br> -->
+            
+        </fieldset>
+        
+        
+        <aside id="results">            
+            <h3>Results<button id="clrResults-btn">Clear Results</button></h3>                
+            <div class="rDisplay">
+                <div class="rDis">
+                    <p class="person person1"><span class="per person1">Nick Smith - 5 points</span>
+                        <button id="delResults-btn_1" class="delResults-btn">delete</button>
+                    </p>
+                </div>
+            </div>
+             
+            
+        </aside>
+        
+        
+    </section>
+    
+    <section class="container3" style="display: none">
+        <div id="userQ">
+           <div id="quesDisplay">
+            <h2 id="ques"> What is your name?</h2>
+            <div class="instant-answer">
+                <p id="instant-answer-text">CORRECT</p>
+                <button id="next-question-btn">Next</button>
+                
+            </div>
+            <div class="answerOptions">
+                <div class="ans0"><span class="ans0">A</span><p class="ans0">Answer 1</p></div>
+                <div class="ans1"><span class="ans1">B</span><p class="ans1">Answer 2</p></div>
+                <div class="ans2"><span class="ans2">C</span><p class="ans2">Answer 3</p></div>
+                <div class="ans3"><span class="ans3">D</span><p class="ans3">Answer 4</p></div>
+            </div>
+           </div>
+        </div>  
+
+        <div class="progressBar">
+            <h1 id="progress">2/20</h1>
+            <progress  value="30" max="100">
+        </div>
+        
+    </section>
+    
+    <section class="container4" style="display: none">
+        <fieldset>
+            <div class="final-result">
+                <a href=""><button id="userLogout">Logout</button></a>
+                <div id="finalScore">
+                    Your Final Score is 
+                </div>
+            </div>
+        </fieldset>
+    </section>
+    
+    <footer>
+        <p id="copyright">Copyright &copy; Atoyebi Adesoji O.&DoubleLeftArrow;</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
